@@ -1,8 +1,8 @@
 /// <reference path="../index.d.ts" />
 import { InputProps, OTPInputViewState } from '@twotalltotems/react-native-otp-input';
 import { Component } from 'react';
-import { TextInput } from 'react-native';
-export default class OTPInputView extends Component<InputProps, OTPInputViewState> {
+import { TextInput, TextInputProps } from 'react-native';
+export default class OTPInputView extends Component<InputProps, OTPInputViewState, TextInputProps> {
     static defaultProps: InputProps;
     private fields;
     private keyboardDidHideListener?;
